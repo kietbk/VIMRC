@@ -1,3 +1,5 @@
+let mapleader = ","
+
 let g:netrw_browse_split=4
 let g:netrw_banner=0
 let g:netrw_altv=1
@@ -11,6 +13,9 @@ set undofile
 set undodir=~/.vim/undodir
 set showmatch
 set ruler
-:nmap ,w :w<CR>
-:map j jzz
-:map k kzz
+noremap <Leader>w :w<CR>
+noremap <Leader>e :q<CR>
+noremap <Leader>E :qa!<CR>
+noremap j jzz
+noremap k kzz
+
